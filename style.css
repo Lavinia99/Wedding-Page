@@ -7,6 +7,15 @@
 {
     /* CSS for other than iOS devices */
 }
+@media not all and (min-resolution:.001dpcm) { @media {
+
+    .safari_only { 
+
+        color:#0000FF; 
+        background-color:#CCCCCC; 
+
+    }
+}}
 
 /* === General Styles === */
 * {
