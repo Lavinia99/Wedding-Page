@@ -1,22 +1,15 @@
 /* === IOS devices === */
-@supports (-webkit-touch-callout: none)
-{
-    /* CSS specific to iOS devices */
-}
-@supports not (-webkit-touch-callout: none)
-{
-    /* CSS for other than iOS devices */
-}
-@media not all and (min-resolution:.001dpcm) { @media {
-
-    .safari_only { 
-
-        color:#0000FF; 
-        background-color:#CCCCCC; 
-
+@media screen and (-webkit-min-device-pixel-ratio:0) { 
+    /* Safari and Chrome */
+    .myClass {
+     color:red;
     }
-}}
 
+    /* Safari only override */
+    ::i-block-chrome,.myClass {
+     color:blue;
+    }
+}
 /* === General Styles === */
 * {
     box-sizing: border-box;
