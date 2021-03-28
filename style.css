@@ -1,8 +1,16 @@
 /* === IOS devices === */
-@media only screen and (-webkit-min-device-pixel-ratio: 1) {
-    ::i-block-chrome, .yourcssrule {
-       your css property
-   }
+@media screen and (max-width: 767px) {
+    _::-webkit-full-page-media, _:future, :root .safari_only {
+        background-image: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
+        background-repeat: no-repeat;
+        background-position: 70%;
+        background-attachment: fixed;
+        background-size: cover;
+        text-align: center;
+        height: 100vh;
+        width: 100vw;
+        position: relative; 
+    }
 }
 /* === General Styles === */
 * {
