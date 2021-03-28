@@ -21,7 +21,7 @@ header {
     background-image: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
     background-repeat: no-repeat;
     background-position: 70%;
-    background-attachment: fixed;
+   
     background-size: cover;
     text-align: center;
     height: 100vh;
