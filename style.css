@@ -1,0 +1,504 @@
+/* === General Styles === */
+* {
+    box-sizing: border-box;
+}
+body {
+    color: #444349;
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center center fixed;
+    background-size: cover;
+    line-height: 1.5rem;
+}
+.content {
+    margin: 1rem auto;
+}
+/* === Header Styling === */
+header {
+    color: hsla(0,0%,100%,.9);
+}
+.cover {
+    background-image: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
+    background-repeat: no-repeat;
+    background-position: 70%;
+    background-attachment: fixed;
+    background-size: cover;
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    position: relative; /* FOR POSITION IN THE MIDDLE OF THE PAGE */
+} 
+/* === Helper styles === 
+.text {
+    font-size: 50px;
+    color: cyan;
+    background-color: red;
+}
+*/
+/* Centred vertical and horizontally */
+.text { 
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    background-color:  hsla(100,0%,0%,.6);
+    border-radius: 5px;
+}
+/* === STYLING === */
+.headline {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3rem;
+    color: #d2ba87;
+}
+.tagline, .date {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    padding: 15px 15px;
+    color: hsla(0,0%,100%,.9);
+}
+.tagline::after {
+    display: block;
+    content: "";
+    background-color: #fff;
+    height: 1px;
+    width: 12.51rem;
+    margin: .5rem auto;
+}
+/*  Hortizontal line with text in it */
+.date::before, .date::after {
+    content: '\00a0\00a0\00a0\00a0';
+    text-decoration: line-through;
+    margin: auto .625rem;
+}
+/* === Main Styles === */
+
+section {
+    text-align: center;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    width: 100vw;
+}
+.locations h1 {
+    font-family:  'Great Vibes', cursive;
+    padding: 30px;
+    font-size: 3.125rem;
+    font-weight: 500;
+}
+.event-styles h1 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.5rem;
+    font-weight: 900;
+    padding-bottom: 30px;
+}
+.event-styles p {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.2rem;
+    font-weight: 900;
+    padding: 20px;
+    line-height: 1.75rem;
+}
+.event-styles img {
+    height: 7.5rem;
+}
+/* Border */
+.event-styles::after {
+    content: '';
+    border-top: 3px solid #444349;
+    width: 25%;
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+}
+/* === Programs Styles === */
+.programs {
+    background-color: hsla(100,0%,0%,.6);
+    color: #d2ba87; 
+    padding: 30px 15px;  
+    width: 100vw;
+    text-align: left;
+    width: 100vw;
+    text-align: left;
+}
+.programs h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.125rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.tag {
+    font-family: 'Mulish', sans-serif;
+    font-style: italic;
+    font-weight: 500;
+    padding-bottom: 20px;
+    text-align: left;
+    font-size: 1.25rem;
+    letter-spacing: .0625rem;
+}
+.times {
+    font-family: 'Mulish', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 500;
+}
+.times li {
+    padding: 5px;
+}
+/* === Gifts Styles === */
+.gifts {
+    padding: 30px 15px;
+    text-align: center;
+}
+.gifts h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.125rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.gifts p {
+    font-family: 'Libre Baskerville', serif;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    text-align: center;
+    font-size: 1.25rem;
+}
+.gifts img {
+    height: 10rem;
+}
+/* ==- Details Styless === */
+.details {
+    background-color: hsla(100,0%,0%,.6);
+    color: #d2ba87;
+    padding: 30px 15px;
+    width: 100vw;
+    text-align: center;
+}
+.details h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.125rem;
+    text-align: center;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.title h2 {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    padding: 20px;
+    text-align: center;
+}
+.questions {
+    font-family: 'Mulish', sans-serif;
+    padding: 10px;
+}
+.questions h3 {
+    font-size: 1.2rem;
+    font-weight: bolder;
+    line-height: 1.75rem;
+    padding-bottom: 10px;
+}
+.questions p {
+    font-size: 1.2rem;
+    font-weight: 550;
+    line-height: 1.75rem;
+    text-align: left;
+}
+.color span  {
+    color: #bd806e;
+    transition: all .2s ease-in-out;
+}
+a {
+    color: #bd806e;
+    transition: all .2s ease-in-out; 
+}
+span:hover {
+    color: #eda087;
+    font-size: 1.5rem;
+}
+/* Border */
+.title {
+    display: inline-block;
+    position: relative;
+    text-align: left;
+}
+.title::after {
+    content: '';
+    border-top: 3px solid #d2ba87;
+    width: 50%;
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+}
+.q3 p {
+    padding-bottom: 10px;
+}
+/* === Contact Styles === */
+.contact {
+    padding: 30px 10px;
+    text-align: center;
+    line-height: 1.75rem;
+}
+.contact h1 {
+    font-family: 'Great Vibes', cursive;
+    font-size: 3.125rem;
+    font-weight: 500;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.contact p br {
+    font-family: 'Libre Baskerville', serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 30px 15px;
+    text-align: center;
+}
+/* === Footer Styles === */
+footer {
+    background-color: #606060;
+    width: 100vw;
+    height: 10vh;
+    position: relative;
+    text-align: center;
+}
+.wrapper {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    font-size: 1rem;
+    color: whitesmoke;
+    padding: 10px 10px;
+    font-family: 'Mulish', sans-serif;
+    font: inherit;
+}
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+a:hover {
+    color: #eda087;
+}
+/* === Media Format === */
+@media screen and (min-width: 600px) {
+    /* === Header === */
+    .text { 
+        width: unset;
+    }
+    /* === Locations === */
+    .ceremony, .photos, .party {
+        padding: 1.5rem;
+        display: inline-block;
+        width: 30%;
+    }
+    .locations h1 {
+        font-size: 3.3rem;
+    }
+    .event-styles h1 {
+        font-size: 1.5rem; 
+    }
+    .event-styles p br {
+        font-size: 1.15rem;
+        padding: 10px;
+        line-height: 1.5rem;
+    }
+    img {
+        height: 7.5rem;
+    }
+    /* Border */
+    .event-styles::after {
+        border-top: unset;
+    }
+    /* === Program === */
+    .programs h1 {
+        font-size: 3.3rem;
+    }
+    .tag {
+        font-size: 1.5rem;
+        font-weight: 600;
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .times li {
+        width: 30vw;
+        margin: 0 auto;
+        font-size: 1.5rem;
+    }
+    /* === Gifts === */
+    .gifts h1 {
+        font-size: 3.3rem;
+    }
+    .gifts p {
+        font-size: 1.5rem;
+    }
+    .gifts img {
+        width: 20%;
+        height: 20%;
+    }
+    /* ==== Details === */
+    .travel, .food, .other {
+        display: inline-block;
+        width: 30%;
+        margin: 0 auto;
+        vertical-align: top;
+    }
+    .title::after {
+        border-top: unset;
+    }
+    .details h1 {
+        font-size: 3.3rem;
+    }
+    .title h2 {
+        font-size: 1.5rem; 
+        text-align: left;
+        padding: 7px;
+    }
+    .questions h3 {
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: bolder;
+        line-height: 1.75rem;
+        padding-bottom: 10px;
+        padding-right: 20px;
+    }
+    .questions p {
+        text-align: left;
+        font-size: 1.4rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        padding-right: 20px;
+    }
+    .contact h1 {
+        font-size: 3.3rem;
+    }
+    .contact p {
+        font-size: 1.4rem;
+        padding: 10px;
+    }
+    /* === Footer === */
+    .wrapper {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1024px) {
+    /* === Header === */
+    .text { 
+        width: 50%;
+    }
+    .headline {
+        font-size: 5rem;
+    }
+    .tagline h1 {
+        font-size: 2rem;
+        padding: 20px 60px;
+    }
+    .date {
+        font-size: 2rem;
+        padding-top: 5px;
+    }
+    /* === Locations === */
+    .ceremony, .photos, .party {
+        padding: 1.5rem;
+        display: inline-block;
+        width: 30%;
+    }
+    .locations h1 {
+        font-size: 5rem;
+    }
+    .event-styles h1 {
+        font-size: 2.5rem; 
+    }
+    .event-styles p br {
+        font-size: 2rem;
+        padding: 10px;
+        line-height: 1.5rem;
+    }
+    img {
+        height: 7.5rem;
+    }
+    /* Border */
+    .event-styles::after {
+        border-top: unset;
+    }
+    /* === Program === */
+    .programs h1 {
+        font-size: 5rem;
+    }
+    .tag {
+        font-size: 2.5rem;
+        font-weight: 600;
+        width: 50vw;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .times li {
+        width: 30vw;
+        margin: 0 auto;
+        font-size: 2rem;
+    }
+    /* === Gifts === */
+    .gifts h1 {
+        font-size: 5rem;
+    }
+    .gifts p {
+        font-size: 2.5rem;
+    }
+    .gifts img {
+        width: 10%;
+        height: 10%;
+    }
+    /* ==== Details === */
+    .travel, .food, .other {
+        display: inline-block;
+        width: 30%;
+        margin: 0 auto;
+        vertical-align: top;
+    }
+    .title::after {
+        border-top: unset;
+    }
+    .details h1 {
+        font-size: 5rem;
+    }
+    .title h2 {
+        font-size: 3rem; 
+        text-align: left;
+        padding: 7px;
+    }
+    .questions h3 {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: bolder;
+        line-height: 1.75rem;
+        padding-bottom: 10px;
+        padding: 10px 20p;
+        width: 90%;
+    }
+    .questions p {
+        text-align: left;
+        font-size: 2rem;
+        font-weight: 500;
+        line-height: 1.75rem;
+        padding-right: 20px;
+        width: 85%;
+    }
+    .contact h1 {
+        font-size: 5rem;
+    }
+    .contact p br {
+        font-size: 3rem;
+        padding: 20px;
+    }
+    /* === Footer === */
+    .wrapper {
+        font-size: 1.4rem;
+    }
+}
+    
+
+
