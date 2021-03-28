@@ -1,3 +1,13 @@
+/* === IOS devices === */
+@supports (-webkit-touch-callout: none)
+{
+    /* CSS specific to iOS devices */
+}
+@supports not (-webkit-touch-callout: none)
+{
+    /* CSS for other than iOS devices */
+}
+
 /* === General Styles === */
 * {
     box-sizing: border-box;
@@ -19,7 +29,6 @@ header {
     background-image: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg');
     background-repeat: no-repeat;
     background-position: 70%;
-    background-position-x: 70%;
     background-attachment: fixed;
     background-size: cover;
     text-align: center;
