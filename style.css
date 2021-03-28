@@ -1,11 +1,9 @@
-
-
 /* === General Styles === */
 * {
     box-sizing: border-box;
 }
 body {
-    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center center;
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') repeat center center fixed;
     color: #444349;
     background-size: cover;
     line-height: 1.5rem;
